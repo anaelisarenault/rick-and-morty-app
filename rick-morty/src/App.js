@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Search from './components/layout/Search';
+import Users from './components/users/Users';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,8 @@ class App extends Component {
     return (
     
       <div className="App">
-        <Search/>
+        <Search />
+        <Users />
       </div>
    
     );

@@ -18,6 +18,9 @@
   background-size: cover;
   height: 100%;
   overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /*no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -32,7 +35,6 @@
 
 .App {
   background: url('/app_bg.png') no-repeat center center fixed;
-  background-size: cover;
   height: 100%; 
   /* Center and scale the image nicely */
   background-position: center;
@@ -45,7 +47,7 @@ body, html {
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
-  color: #333;
+  color: #fff;
   height: 100%;
   margin: 0;
 }

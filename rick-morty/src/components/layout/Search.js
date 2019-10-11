@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export class Search extends Component {
   static defaultProps = {
     title: 'Search...',
-    icon: 'far fa-search'
+    icon: 'fas fa-search'
   };
 
   static propTypes = {
