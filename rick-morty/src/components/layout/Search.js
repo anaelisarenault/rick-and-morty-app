@@ -1,24 +1,22 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export class Search extends Component {
-  static defaultProps = {
-    title: 'Search...',
-    icon: 'fas fa-search'
-  };
-
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired
-  };
-
-  render() {
-    return (
+const Search = (props) => {
+  return (
     <div>
-        <i className={this.props.icon} /> {this.props.title}
+      <i className={props.icon} /> {props.title}
     </div>
-    )
-  }
+  )
 }
+
+Search.defaultProps = {
+  title: 'Search...',
+  icon: 'fas fa-search'
+};
+
+Search.propTypes = {
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired
+};
 
 export default Search;

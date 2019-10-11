@@ -12,13 +12,19 @@ class Users extends Component {
 
   render() {
     return (
-      <div>
+      <div style={userStyle}>
         {this.state.users.map(user => (
           <UserItem key={user.id} user={user} />
         ))}
       </div>
     )
   }
+}
+
+const userStyle = {
+  display: 'list',
+  gridTemplateColumns: "repeat(1, 1fr)",
+  gridGap: '0.5rem'
 }
 
 export default Users
