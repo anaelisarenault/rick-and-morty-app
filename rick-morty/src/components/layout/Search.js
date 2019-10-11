@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-const Search = (props) => {
+const Search = ({ icon, title }) => {
   return (
     <div>
-      <i className={props.icon} /> {props.title}
+      <i className={icon} /> {title}
     </div>
   )
 }
