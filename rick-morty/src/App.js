@@ -5,8 +5,17 @@ import axios from 'axios';
 import './App.css';
 
 class App extends Component {
-  componentDidMount() {
-    axios.get('https://rickandmortyapi.com/api/').then(res => console.log(res.data))
+  state = {
+    users : [],
+    loading: false
+  };
+
+  async componentDidMount() {
+    this.setState({ loading: true });
+
+    const res = await axios.get('https://rickandmortyapi.com/api/');
+
+    this.setState({ users: res.data, loading: false });
   }
   render() {
     return (
@@ -15,7 +24,7 @@ class App extends Component {
           <Search />
         </div>
         <div className="container"> 
-          <Users />
+          <Users loading={this.state.loading} users={this.state.users}/>
         </div>
       </div>
    
