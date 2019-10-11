@@ -14,15 +14,40 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-image: url('/rick-morty/public/app_bg.png');
+  background-image: url('/app_bg.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+
+  /*no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 2580px;
+  height: 1352px; */
+  /*overflow: scroll; white-space: pre;
+  background-attachment: scroll; */
 }
 
-body {
+.App {
+  background: url('/app_bg.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, html {
   font-family: 'Roboto', 'Comfortaa', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
   color: #333;
+  height: 100%;
+  margin: 0;
 }
 
 a {
